@@ -25,7 +25,7 @@ export const SummaryTable: React.FC = () => {
         {summaryDates.map(date => {
           return (
             <HabitDay
-              key={date.toString()}
+              key={`${date}`}
               amount={5}
               completed={Math.round(Math.random() * 5)}
             />
